@@ -1,7 +1,8 @@
-const db=reuire('mysql2');
-const pool=mysql.createpool({
+const mysql=require('mysql2');
+const pool=mysql.createPool({
     host:'localhost',
     user:'root',
-    database:'node-connected'
+    database:'node-connected',
+    password:'root'
 })
 module.exports=pool.promise();
